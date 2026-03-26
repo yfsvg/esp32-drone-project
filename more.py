@@ -6,15 +6,13 @@ dataset = version.download("yolov8")
 
 from ultralytics import YOLO
 
-# 1. Load the nano model (best for your stream)
 model = YOLO('yolov8n-seg.pt')
 
-# 2. Start training using the path Roboflow just gave you
 model.train(
     data=f"{dataset.location}/data.yaml", 
     epochs=50, 
-    imgsz=320,      # Smaller is more stable
+    imgsz=320,     
     device='mps', 
-    workers=2,      # Prevents "Time limit" errors from data loading
-    batch=8         # Lowers memory usage
+    workers=2,     
+    batch=8        
 )
