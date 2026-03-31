@@ -124,16 +124,12 @@ try:
 except Exception as e:
     sys.exit(1)
 
-# ---------------------------------------------------------------------------
-# Stream Setup — now using threaded grabber
-# ---------------------------------------------------------------------------
+# Stream settingup now using threaded grabber
 def resolve_source(src):
     try: return int(src)
     except ValueError: return src
 
 grabber = FrameGrabber(resolve_source(args.source))
-
-# Give the grabber thread a moment to fill its first frame
 time.sleep(0.5)
 
 # ---------------------------------------------------------------------------
