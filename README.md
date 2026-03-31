@@ -37,7 +37,7 @@ ESP32 code: C++, Arduino IDE
 -
 
 ## CAD files
-All STL files are in the DRONESTLFILES folder, and the public Onshape link is here: https://cad.onshape.com/documents/4d949e733ae3224fbe4bc38b/w/46edb2449a469d3a34608bfa/e/87cf866c0849984a1ade0323
+All STL files are in this public Onshape document, link: https://cad.onshape.com/documents/4d949e733ae3224fbe4bc38b/w/46edb2449a469d3a34608bfa/e/87cf866c0849984a1ade0323
 All of the design was done by me! 
 
 -
